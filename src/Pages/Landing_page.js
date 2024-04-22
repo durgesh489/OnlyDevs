@@ -2,6 +2,7 @@ import React from "react";
 
 import Listitem from "../components/Helpingcomponents/Listitem";
 import SearchAppBar from "../components/Helpingcomponents/Seacrchapp";
+import Navbar from "../components/maincomponent/Navbar";
 
 const Data = [
   {
@@ -69,9 +70,9 @@ const Data = [
 const LandingPage = () => {
   return (
     <React.Fragment>
-      <div className="bg-slate-500 h-[100vh]">
-        <SearchAppBar />
-        <div className="rounded-xl my-4 bg-white m-auto w-[500px] h-[630px] overflow-scroll">
+      <div className="bg-slate-200">
+        {/* <SearchAppBar /> */}
+        <div className="rounded-xl p-4 bg-white m-auto w-[500px] h-[630px] overflow-scroll">
           {Data.map((item) => {
             return (
               <Listitem

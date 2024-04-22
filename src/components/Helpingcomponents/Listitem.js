@@ -1,5 +1,7 @@
 import React from "react";
-import Avatar from "./Avatar";
+// import Avatar from "./Avatar";
+import { ListItem, ListItemAvatar, Avatar, ListItemText } from "@mui/material";
+import PersonIcon from "@mui/icons-material/Person";
 
 const Listitem = (props) => {
   return (
@@ -46,7 +48,25 @@ const Listitem = (props) => {
           {props.Description}
         </p>
       </div>
-    </div>
+      </div>
+      
+    // <ListItem>
+    //   <ListItemAvatar>
+    //     <Avatar>
+    //       <PersonIcon />
+    //     </Avatar>
+    //   </ListItemAvatar>
+    //   <ListItemText
+    //     primary={`${props.FirstName} ${props.LastName}`}
+    //     secondary={
+    //       <React.Fragment>
+    //         <span>Email: {props.email}</span>
+    //         <br />
+    //         <span>Experience: {props.experience}</span>
+    //       </React.Fragment>
+    //     }
+    //   />
+    // </ListItem>
   );
 };
 
