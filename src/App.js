@@ -4,7 +4,10 @@ import LandingPage from "./Pages/Landing_page";
 import Navbar from "./components/maincomponent/Navbar";
 import Footer from "./components/maincomponent/Footer";
 import Homepage from "./components/maincomponent/Homepage.js";
+import SignUp from "./Pages/SignUp/UserSignupPage.js";
 import { Route, Routes } from "react-router-dom";
+import UserSignUpPage from "./Pages/SignUp/UserSignupPage.js";
+import ExpertSignUpPage from "./Pages/SignUp/ExpertSignUpPage.js";
 
 function App() {
   return (
@@ -12,9 +15,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" Component={Homepage}></Route>
-        {/* <Route path="/" Component={SignInSide}></Route> */}
         <Route path="/SignIn" Component={SignIn}></Route>
         <Route path="/Landingpage" Component={LandingPage}></Route>
+        <Route path="/User" Component={UserSignUpPage}></Route>
+        <Route path="/Expert" Component={ExpertSignUpPage}></Route>
       </Routes>
       <Footer />
     </div>

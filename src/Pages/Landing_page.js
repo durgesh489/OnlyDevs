@@ -1,88 +1,33 @@
 import React from "react";
 
 import Listitem from "../components/Helpingcomponents/Listitem";
-import SearchAppBar from "../components/Helpingcomponents/Seacrchapp";
-import Navbar from "../components/maincomponent/Navbar";
-
-const Data = [
-  {
-    id: "cyz",
-    Title: "Frontend Expert",
-    company: "Microsoft",
-    FirstName: "Aditya",
-    LastName: "Sharma",
-    experience: "5+ years",
-    Description:
-      "Highly skilled Frontend Expert with 5+ years of experience at Microsoft, specializing in web development.",
-  },
-  {
-    id: "abc",
-    Title: "Backend Developer",
-    company: "Google",
-    FirstName: "John",
-    LastName: "Doe",
-    experience: "10+ years",
-    Description:
-      "Senior Backend Developer with over 10 years of experience at Google, focusing on scalable solutions.",
-  },
-  {
-    id: "def",
-    Title: "Data Scientist",
-    company: "Amazon",
-    FirstName: "Alice",
-    LastName: "Smith",
-    experience: "8+ years",
-    Description:
-      "Experienced Data Scientist with 8+ years at Amazon, proficient in machine learning and analytics.",
-  },
-  {
-    id: "ghi",
-    Title: "UX/UI Designer",
-    company: "Apple",
-    FirstName: "Michael",
-    LastName: "Johnson",
-    experience: "12+ years",
-    Description:
-      "Seasoned UX/UI Designer with 12+ years at Apple, creating intuitive and visually appealing interfaces.",
-  },
-  {
-    id: "jkl",
-    Title: "Software Engineer",
-    company: "Facebook",
-    FirstName: "Emily",
-    LastName: "Brown",
-    experience: "6+ years",
-    Description:
-      "Software Engineer with 6+ years experience at Facebook, contributing to cutting-edge projects.",
-  },
-  {
-    id: "mno",
-    Title: "DevOps Engineer",
-    company: "Tesla",
-    FirstName: "David",
-    LastName: "Wilson",
-    experience: "9+ years",
-    Description:
-      "Skilled DevOps Engineer with 9+ years at Tesla, automating infrastructure and deployment pipelines.",
-  },
-];
+import dummyDataArray from "../components/Helpingcomponents/DummyData";
 
 const LandingPage = () => {
   return (
     <React.Fragment>
-      <div className="bg-slate-200">
+      <div className="flex flex-row items-center w-full h-[5rem] bg-black">
+        <input
+          placeholder="Search here"
+          className=" bg-slate-200 text-black align-text-bottom focus:outline-none mx-[10rem] py-2 px-[2rem] w-full  rounded-full"
+          type="text"
+        />
+      </div>
+
+      <div className="bg-slate-200 h-[76vh] my-0 m-auto overflow-y-scroll ">
         {/* <SearchAppBar /> */}
-        <div className="rounded-xl p-4 bg-white m-auto w-[500px] h-[630px] overflow-scroll">
-          {Data.map((item) => {
+        <div className="  p-3 flex flex-col gap-5  ">
+          {dummyDataArray.map((item) => {
             return (
               <Listitem
                 id={item.id}
+                Name={item.Name}
                 Title={item.Title}
-                company={item.company}
-                FirstName={item.FirstName}
-                LastName={item.LastName}
                 experience={item.experience}
                 Description={item.Description}
+                techStack={item.techStack}
+                company={item.company}
+                image={item.image}
               />
             );
           })}
