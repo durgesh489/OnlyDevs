@@ -15,6 +15,7 @@ const LandingPage = () => {
       </div>
 
       <div className="bg-slate-200 h-[76vh] my-0 m-auto overflow-y-scroll ">
+      
         {/* <SearchAppBar /> */}
         <div className="  p-3 flex flex-col gap-5  ">
           {dummyDataArray.map((item) => {
