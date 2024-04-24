@@ -8,19 +8,21 @@ import SignUp from "./Pages/SignUp/UserSignupPage.js";
 import { Route, Routes } from "react-router-dom";
 import UserSignUpPage from "./Pages/SignUp/UserSignupPage.js";
 import ExpertSignUpPage from "./Pages/SignUp/ExpertSignUpPage.js";
+import ErrorPage from "./components/maincomponent/ErrorPage.js";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App ">
       <Navbar />
       <Routes>
-        <Route path="/" Component={Homepage}></Route>
-        <Route path="/SignIn" Component={SignIn}></Route>
-        <Route path="/Landingpage" Component={LandingPage}></Route>
+        <Route path="/" Component={Homepage} />
+        <Route path="/SignIn" Component={SignIn} />
+        <Route path="/Landingpage" Component={LandingPage} />
         <Route path="/SignUp">
-          <Route path="/SignUp/User" Component={UserSignUpPage}></Route>
-          <Route path="/SignUp/Expert" Component={ExpertSignUpPage}></Route>
+          <Route path="/SignUp/User" Component={UserSignUpPage} />
+          <Route path="/SignUp/Expert" Component={ExpertSignUpPage} />
         </Route>
+        <Route path="*" Component={ErrorPage} />
       </Routes>
       <Footer />
     </div>

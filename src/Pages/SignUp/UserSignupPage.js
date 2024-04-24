@@ -162,18 +162,19 @@ const UserSignupPage = () => {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ my: 3 }}
+              style={{ height: "45px" }}
             >
               Sign Up
             </Button>
             <Grid container justifyContent="center">
               <Grid item>
-                <a className="SignInButton" variant="body2">
+                <Box className="SignInButton" variant="body2">
                   {"Already have an Account "}
                   <Link className="hover:cursor-pointer" href="/SignIn">
-                    <Button>SIGN IN</Button>
+                    <Button>Sign In</Button>
                   </Link>
-                </a>
+                </Box>
               </Grid>
             </Grid>
           </Box>

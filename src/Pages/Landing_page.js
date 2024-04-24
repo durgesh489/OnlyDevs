@@ -6,10 +6,10 @@ import { dummyDataArray } from "../components/Helpingcomponents/DummyData";
 const LandingPage = () => {
   return (
     <React.Fragment>
-      <div className="flex flex-row items-center w-full h-[5rem] bg-black">
+      <div className="flex flex-row items-center w-full h-[5rem]">
         <input
           placeholder="Search here"
-          className=" bg-slate-200 text-black align-text-bottom focus:outline-none mx-[10rem] py-2 px-[2rem] w-full  rounded-full"
+          className="  border-black border-2 text-black align-text-bottom focus:outline-none mx-[10rem] py-2 px-[2rem] w-full rounded-lg"
           type="text"
         />
       </div>
