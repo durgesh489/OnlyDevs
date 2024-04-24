@@ -90,7 +90,7 @@ function SignIn() {
         document.getElementById("Portalmodal")
       )}
       <ThemeProvider theme={defaultTheme}>
-        <Container sx={{}} component="main" maxWidth="xs">
+        <Container component="main" maxWidth="xs">
           <CssBaseline />
           <Box
             sx={{
@@ -164,6 +164,7 @@ function SignIn() {
                 fullWidth
                 variant="contained"
                 sx={{ mt: 3, mb: 2 }}
+                style={{ height: "45px" }}
               >
                 Sign In
               </Button>
