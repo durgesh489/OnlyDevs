@@ -1,7 +1,7 @@
 import React from "react";
 
 import Listitem from "../components/Helpingcomponents/Listitem";
-import dummyDataArray from "../components/Helpingcomponents/DummyData";
+import { dummyDataArray } from "../components/Helpingcomponents/DummyData";
 
 const LandingPage = () => {
   return (

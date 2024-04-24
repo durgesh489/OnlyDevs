@@ -1,7 +1,6 @@
 import React from "react";
 // import Avatar from "./Avatar";
-import { ListItem, ListItemAvatar, Avatar, ListItemText } from "@mui/material";
-import PersonIcon from "@mui/icons-material/Person";
+import Userphoto from "../../Assets/Photos/Userphoto.jpg";
 
 const Listitem = (props) => {
   return (
@@ -70,7 +69,9 @@ const Listitem = (props) => {
 
     <React.Fragment>
       <div className="flex shadow-md bg-white w-[60%] m-auto rounded-lg ">
-        <div className="w-[35%]">Image</div>
+        <div className="w-[35%]">
+          <img className="h-[100%] w-[100%] object-cover" src={Userphoto}></img>
+        </div>
         <div className="flex flex-col  border-2 w-full pt-3 px-3">
           <div className=" pl-2  w-full">
             <div className="flex gap-4 items-center ">

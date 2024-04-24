@@ -9,7 +9,7 @@ const Navbar = () => {
   //   console.log(isScrolled);
   return (
     <React.Fragment>
-      <div className=" non-italic bg-sky-600  w-full flex justify-center  items-center">
+      <div className=" non-italic bg-sky-600 sticky top-0 z-10 w-full flex justify-center  items-center">
         <div className="flex bg-sky-600  translate-y-2 p-2 z-100 w-full justify-between transition-all">
           <div className="flex items-center ">
             <p className="text-2xl font-bold text-white ml-4 p-2 ">

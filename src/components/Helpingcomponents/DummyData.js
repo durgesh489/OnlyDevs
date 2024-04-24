@@ -1,4 +1,4 @@
-const dummyDataArray = [
+export const dummyDataArray = [
   {
     id: "1",
     Title: "Frontend Expert",
@@ -109,6 +109,32 @@ const dummyDataArray = [
     techStack: ["Java", "Spring", "Microservices", "Cloud Computing"],
     image: "https://example.com/avatar10.jpg",
   },
+];
+
+export const optionTechStack = [
+  { label: "HTML", value: "html" },
+  { label: "CSS", value: "css" },
+  { label: "JavaScript", value: "javascript" },
+  { label: "React.js", value: "reactjs" },
+  { label: "Node.js", value: "nodejs" },
+  { label: "Python", value: "python" },
+  { label: "Java", value: "java" },
+  { label: "C++", value: "cpp" },
+  { label: "Ruby", value: "ruby" },
+  { label: "PHP", value: "php" },
+];
+
+export const optionTechTitles = [
+  { label: "Frontend Developer", value: "frontend_developer" },
+  { label: "Backend Developer", value: "backend_developer" },
+  { label: "Full Stack Developer", value: "full_stack_developer" },
+  { label: "UI/UX Designer", value: "ui_ux_designer" },
+  { label: "Mobile App Developer", value: "mobile_app_developer" },
+  { label: "DevOps Engineer", value: "devops_engineer" },
+  { label: "Data Scientist", value: "data_scientist" },
+  { label: "Machine Learning Engineer", value: "ml_engineer" },
+  { label: "Software Engineer", value: "software_engineer" },
+  { label: "Web Developer", value: "web_developer" },
 ];
 
 export default dummyDataArray;
