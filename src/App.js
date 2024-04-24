@@ -17,8 +17,10 @@ function App() {
         <Route path="/" Component={Homepage}></Route>
         <Route path="/SignIn" Component={SignIn}></Route>
         <Route path="/Landingpage" Component={LandingPage}></Route>
-        <Route path="/User" Component={UserSignUpPage}></Route>
-        <Route path="/Expert" Component={ExpertSignUpPage}></Route>
+        <Route path="/SignUp">
+          <Route path="/SignUp/User" Component={UserSignUpPage}></Route>
+          <Route path="/SignUp/Expert" Component={ExpertSignUpPage}></Route>
+        </Route>
       </Routes>
       <Footer />
     </div>

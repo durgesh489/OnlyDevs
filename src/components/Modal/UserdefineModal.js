@@ -25,7 +25,7 @@ const UserdefinModal = (props) => {
         <div className="flex flex-col w-full justify-center items-center font-bold">
           <p>Want to Sign Up as :</p>
           <div>
-            <Link to="/User">
+            <Link to="/SignUp/User">
               <button
                 onClick={closeButtonClickHandler}
                 className="bg-white p-2 m-3 w-[7rem] rounded-full"
@@ -35,7 +35,7 @@ const UserdefinModal = (props) => {
             </Link>
           </div>
           <div>
-            <Link to="/Expert">
+            <Link to="/SignUp/Expert">
               <button
                 onClick={closeButtonClickHandler}
                 className="bg-white p-2 m-3 w-[7rem] rounded-full"
