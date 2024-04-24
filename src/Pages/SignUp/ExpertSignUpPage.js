@@ -3,7 +3,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import { Hidden, MenuItem } from "@mui/material";
+import { Hidden, InputLabel, MenuItem } from "@mui/material";
 import Autocomplete from "@mui/material/Autocomplete";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
@@ -93,19 +93,13 @@ const ExpertSignUpPage = () => {
   //   console.log(formData);
   // };
 
-  const options = [
-    { label: "Frontend developer", value: "Frontend developer" },
-    { label: "Backend developer", value: "Backend developer" },
-    { label: "Devops Engineer", value: "Devops Engineer" },
-  ];
-
   return (
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginY: 6,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -134,6 +128,7 @@ const ExpertSignUpPage = () => {
               autoFocus
             />
             <Autocomplete
+              id="Title"
               isOptionEqualToValue={(option, value) => {
                 return option.value === value.value;
               }}
@@ -212,6 +207,8 @@ const ExpertSignUpPage = () => {
             />
 
             <Autocomplete
+              id="Skills"
+              required
               sx={{ mt: 2 }}
               multiple
               options={optionTechStack}
@@ -219,38 +216,41 @@ const ExpertSignUpPage = () => {
               value={selectedOptions}
               onChange={handleChangeOnTechStackInput}
               renderInput={(params) => (
-                <TextField
-                  {...params}
-                  label="Select Options"
-                  variant="outlined"
-                />
+                <TextField {...params} label="Skills" variant="outlined" />
               )}
               fullWidth
             />
-
+            <InputLabel sx={{ mt: 2 }} htmlFor="resume">
+              Resume
+            </InputLabel>
             <Input
-              sx={{ mt: 2, outline: 0 }}
+              style={{
+                height: "45px",
+                textDecoration: "none",
+              }}
+              required
+              id="resume"
               type="file"
               onChange={uploadFileHandler}
               fullWidth
             />
-
             <Button
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 2 }}
+              style={{ height: "45px" }}
             >
               Sign Up
             </Button>
             <Grid container justifyContent="center">
               <Grid item>
-                <a className="SignInButton" variant="body2">
-                  {"Already have an Account "}
+                <Box className="SignInButton" variant="body2">
+                  {"Already have an Account ?"}
                   <Link className="hover:cursor-pointer" href="/SignIn">
                     <Button>Sign In</Button>
                   </Link>
-                </a>
+                </Box>
               </Grid>
             </Grid>
           </Box>

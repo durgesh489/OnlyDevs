@@ -30,7 +30,7 @@ const Navbar = () => {
 
               <li className="px-[1rem] mx-2">
                 <Link to="/SignIn">
-                  <button className="broder-white bg-slate-700  rounded-full w-[8rem] p-[0.5rem] hover:text-white hover:bg-black ">
+                  <button className="broder-white  bg-white text-black  rounded-full w-[8rem] p-[0.5rem]   hover:outline hover:outline-white hover:outline-offset-2">
                     Sign In
                   </button>
                 </Link>
